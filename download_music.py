@@ -7,7 +7,7 @@ write_path = "./tmp.jsonl"
 def get_hunyuan_res(messages):
     for _ in range(3):
         try:
-            response = requests.post("http://hunyuanapi.woa.com/openapi/v1/chat/completions", json={
+            response = requests.post("http://hunyuan.tencentcloudapi.com/openapi/v1/chat/completions", json={
                 "model": "hunyuan-2.0-instruct-20251111",
                 # "model": "hunyuan",
                 "messages": messages,
